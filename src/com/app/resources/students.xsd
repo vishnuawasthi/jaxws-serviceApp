@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/students"
+	xmlns:tns="http://www.example.org/students" elementFormDefault="qualified">
+
+	<attribute name="rollNumber" type="string" default="nill"></attribute>
+
+	<element name="Student">
+		<complexType>
+			<sequence>
+				<element name="firstName" type="string" nillable="false"></element>
+				<element name="middleName" type="string" nillable="true"></element>
+				<element name="lastName" type="string" nillable="false"></element>
+				<element name="email" type="string" nillable="false"></element>
+				<element name="addressLine1" type="string"></element>
+				<element name="addressLine2" type="string"></element>
+				<element name="city" type="string"></element>
+				<element name="state" type="string"></element>
+				<element name="country" type="string"></element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
